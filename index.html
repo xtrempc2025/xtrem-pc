@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtrem-PC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <img src="logo.png" alt="Logo Xtrem-PC">
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#productos">Productos</a></li>
+           <!--<li><a href="#testimonios">Testimonios</a></li>--> 
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!---- hero -->
+    <section id="inicio" class="hero-banner animar">
+      <div class="hero-content">
+        <h1>Bienvenido a Xtrem-PC</h1>
+        <p>Soluciones técnicas, diseño web y experiencia de usuario de alto nivel</p>
+      <a href="#servicios" class="btn-whatsapp">Descubre nuestros servicios</a>
+      </div>
+    </section>
+
+
+    <!-- Contenido -->
+    <section id="servicios" class="services-section">
+  <h2>Nuestros Servicios</h2>
+  <div class="services-container">
+    
+    <!-- Servicio 1 -->
+    <div class="service-card">
+      <img src="mantenimiento.png" alt="Mantenimiento de equipos de cómputo">
+      <h3>Mantenimiento de Equipos de Cómputo</h3>
+      <p>Diagnóstico, limpieza interna y optimización de hardware y software para garantizar el máximo rendimiento y prolongar la vida útil de tus equipos.</p>
+    </div>
+
+    <!-- Servicio 2 -->
+    <div class="service-card">
+      <img src="impresora.png" alt="Mantenimiento y reparación de impresoras">
+      <h3>Mantenimiento y Reparación de Impresoras</h3>
+      <p>Revisión de componentes, limpieza de cabezales, calibración y reparación de fallas mecánicas o electrónicas para impresoras de todas las marcas.</p>
+    </div>
+
+    <!-- Servicio 3 -->
+    <div class="service-card">
+      <img src="globo.png" alt="Instalación de redes">
+      <h3>Instalación de Redes</h3>
+      <p>Diseño, instalación y configuración de redes cableadas e inalámbricas, asegurando conectividad estable, segura y de alto rendimiento.</p>
+    </div>
+
+    <!-- Servicio 4 -->
+    <div class="service-card">
+      <img src="camara-de-cctv.png" alt="Cámaras de seguridad">
+      <h3>Instalación de Cámaras de Seguridad</h3>
+      <p>Implementación de sistemas de videovigilancia con cámaras HD, configuración remota y asesoría en puntos estratégicos para máxima cobertura.</p>
+    </div>
+
+  </div>
+
+  <!-- seccion de cursos-->
+   <section id="cursos" class="courses-section">
+  <h2>Nuestros Cursos</h2>
+  <div class="courses-container">
+    
+    <!-- Curso 1 -->
+    <article class="course-card">
+      <img src="mantenimiento2.png" width="15%" height="25%" alt="Curso de Mantenimiento de Computadores e Instalación de Sistemas Operativos">
+      <h3>Mantenimiento de Computadores e Instalación de Sistemas Operativos</h3>
+      <p>Aprende a diagnosticar, reparar y optimizar equipos de cómputo, además de instalar y configurar sistemas operativos de forma profesional.</p>
+      <a href="#contacto" class="btn-whatsapp">Inscribirme</a>
+    </article>
+
+    <!-- Curso 2 -->
+    <article class="course-card">
+      <img src="ofimatica.png" width="15%" height="25%" alt="Curso de Ofimática Básica y Avanzada">
+      <h3>Ofimática Básica y Avanzada</h3>
+      <p>Domina herramientas como Word, Excel, PowerPoint y más, desde lo esencial hasta funciones avanzadas para el entorno laboral.</p>
+      <a href="#contacto" class="btn-whatsapp">Inscribirme</a>
+    </article>
+
+    <!-- Curso 3 -->
+    <article class="course-card">
+      <img src="redes.png" width="15%" height="25%" alt="Curso de Redes">
+      <h3>Redes</h3>
+      <p>Conoce el diseño, instalación y configuración de redes cableadas e inalámbricas, asegurando conectividad estable y segura.</p>
+      <a href="#contacto" class="btn-whatsapp">Inscribirme</a>
+    </article>
+
+    <!-- Curso 4 -->
+    <article class="course-card">
+      <img src="camara-de-cctv.png" width="15%" height="25% alt="Curso de Cámaras de Seguridad">
+      <h3>Cámaras de Seguridad</h3>
+      <p>Aprende a instalar, configurar y mantener sistemas de videovigilancia con cámaras HD y acceso remoto.</p>
+      <a href="#contacto" class="btn-whatsapp">Inscribirme</a>
+    </article>
+
+  </div>
+</section>
+
+
+
+</section>
+
+
+
+
+
+<!-- =========================================
+     MÓDULO: PRODUCTOS (con filtros y animaciones)
+     DESCRIPCIÓN: Sección con tarjetas de productos,
+     filtros por categoría y animaciones escalonadas.
+     ESTRUCTURA: Contenedor principal > Controles de filtro > Grid de tarjetas
+     NOTA: Clases y IDs únicos para evitar conflictos
+========================================= -->
+
+<section id="productos" class="productos-section">
+  <div class="container">
+    <h2 class="section-title">Nuestros Productos</h2>
+
+    <!-- Controles de filtro -->
+    <div class="productos-filtros">
+      <button class="filtro-btn activo" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="hardware">Hardware</button>
+      <button class="filtro-btn" data-categoria="software">Software</button>
+      <button class="filtro-btn" data-categoria="accesorios">Accesorios</button>
+    </div>
+
+    <!-- Grid de productos -->
+    <div class="productos-grid">
+      <article class="producto-card" data-categoria="hardware">
+        <img src="attech 256 gb.jpg" width="20%" height="40%" alt="Producto 1" class="producto-img">
+        <h3 class="producto-nombre">SSD ATTECH 256GB</h3>
+        <p class="producto-precio">$110.000</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <article class="producto-card" data-categoria="software">
+        <img src="attech 256 gb.jpg" width="20%" height="40%" alt="Producto 2" class="producto-img">
+        <h3 class="producto-nombre">SSD ATTECH 512G B</h3>
+        <p class="producto-precio">$160.000</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <article class="producto-card" data-categoria="accesorios">
+        <img src="tintas.png" width="20%" height="40%" alt="TINTAS" class="producto-img">
+        <h3 class="producto-nombre">TINTA GIHONCLICK</h3>
+        <p class="producto-precio">$15.000</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- modulo de contacto y mapa-->
+
+<!-- =========================================
+     MÓDULO: CONTACTO
+     DESCRIPCIÓN: Formulario de contacto + datos + mapa
+     ESTRUCTURA: Contenedor principal > Formulario > Info > Mapa
+========================================= -->
+
+<section id="contacto" class="contact-section">
+  <h2>Contáctanos</h2>
+  <p class="contact-intro">Estamos listos para ayudarte. Escríbenos o visítanos en nuestra sede.</p>
+  
+  <div class="contact-container">
+    
+    <!-- Formulario -->
+    <form class="contact-form" action="enviar.php" method="post">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit" class="btn-whatsapp">Enviar mensaje</button>
+    </form>
+
+    <!-- Información de contacto -->
+    <div class="contact-info">
+      <ul>
+        <li>📞 <strong>Teléfono:</strong> +57 315 926 7161</li>
+        <li>📧 <strong>Email:</strong> contacto@xtrem-pc.com</li>
+        <li>📍 <strong>Dirección:</strong> Calle 7 # 4-29, Barrio Gólgota, Ipiales, Nariño, Colombia</li>
+      </ul>
+
+      <!-- Botón de WhatsApp -->
+      <a href="https://wa.me/573159267161" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        💬 Chatea por WhatsApp
+      </a>
+
+      <!-- Mapa -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps?q=Calle+7+%23+4-29,+Barrio+G%C3%B3lgota,+Ipiales,+Nari%C3%B1o,+Colombia&output=embed" 
+          width="100%" 
+          height="250" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+      
+     
+  </div>
+
+   <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573159267161" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   aria-label="Chatear por WhatsApp">
+  <img src="wp.png" alt="WhatsApp">
+</a>
+
+
+</section>
+
+<!-- =========================================
+     MÓDULO: FOOTER
+     DESCRIPCIÓN: Pie de página con info, enlaces y redes
+========================================= -->
+
+<footer class="main-footer">
+  <div class="footer-container">
+    
+    <!-- Logo y descripción -->
+    <div class="footer-about">
+      <img src="logo.png" alt="Logo Xtrem-PC" class="footer-logo">
+      <p>Soluciones técnicas, diseño web y experiencia de usuario de alto nivel en Ipiales, Nariño.</p>
+    </div>
+
+    <!-- Enlaces rápidos -->
+    <nav class="footer-links" aria-label="Enlaces de pie de página">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contacto -->
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <p>📍 Calle 7 # 4-29, Barrio Gólgota, Ipiales, Nariño, Colombia</p>
+      <p>📞 +57 315 926 7161</p>
+      <p>📧 xtrem-pc@hotmail.com</p>
+      <!-- Botón de WhatsApp -->
+      <a href="https://wa.me/573159267161" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+        <span class="icon">💬</span> WhatsApp
+      </a>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="footer-social">
+      <h4>Síguenos</h4>
+      <a href="#" aria-label="Facebook">📘</a>
+      <a href="#" aria-label="Instagram">📷</a>
+      <a href="#" aria-label="YouTube">▶️</a>
+    </div>
+
+  </div>
+
+  <!-- Derechos -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Xtrem-PC. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+</main>
+
+<!-- Llamada al script externo -->
+<script src="script.js"></script>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573159267161" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   class="whatsapp-float" 
+   aria-label="Chatear por WhatsApp">
+   <img src="wp.png" alt="">
+</a>
+
+<!-- Botón Volver Arriba -->
+<button id="btn-top" aria-label="Volver arriba">
+  ⬆
+</button>
+
+
+</body>
+</html>
